@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Icon_No_Voices.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

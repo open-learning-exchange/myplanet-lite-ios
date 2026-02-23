@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Icon_Team_Exit.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

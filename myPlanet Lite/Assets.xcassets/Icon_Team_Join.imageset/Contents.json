@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Icon_Team_Join.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
