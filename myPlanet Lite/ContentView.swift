@@ -3175,43 +3175,6 @@ private struct VoiceDetailView: View {
         }
     }
 
-    @MainActor
-    private func deleteComment(_ comment: VoicePost) async {
-        let baseHost = serverHost.hasSuffix("/") ? serverHost : "\(serverHost)/"
-        guard let url = URL(string: "\(baseHost)db/news/") else { return }
-
-        var payload: [String: Any] = [
-            "_id": comment.id,
-            "_deleted": true
-        ]
-        if let rev = comment.rev { payload["_rev"] = rev }
-        if let docType = comment.docType { payload["docType"] = docType }
-        if let createdOn = comment.createdOn { payload["createdOn"] = createdOn }
-        payload["message"] = comment.message
-        if let ts = comment.timestamp {
-            payload["time"] = Int64(ts.timeIntervalSince1970 * 1000)
-            payload["updatedDate"] = Int64(Date().timeIntervalSince1970 * 1000)
-        }
-
-        guard let bodyData = try? JSONSerialization.data(withJSONObject: payload) else { return }
-
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        if !authSessionCookie.isEmpty {
-            request.setValue("AuthSession=\(authSessionCookie)", forHTTPHeaderField: "Cookie")
-        }
-        request.httpBody = bodyData
-
-        do {
-            let (_, response) = try await URLSession.shared.data(for: request)
-            if let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) {
-                comments.removeAll { $0.id == comment.id }
-            }
-        } catch {
-        }
-    }
-
     private func downloadImageIfNeeded(path: String) async {
         guard let localURL = VoiceUIHelper.localFileURL(for: path) else { return }
 

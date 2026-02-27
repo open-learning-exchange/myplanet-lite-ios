@@ -22,8 +22,6 @@
 "no_account" = "Não tem uma conta?";
 "register" = "Registrar-se";
 "privacy_notice" = "Leia nossa política de privacidade";
-"dashboard_tab_voices" = "Vozes";
-"dashboard_tab_teams" = "Minhas equipes";
 "logout" = "Sair";
 "menu_profile" = "Perfil";
 "menu_teams" = "Equipes";
@@ -88,18 +86,6 @@
 "register_language_level_helper" = "Selecione o idioma e o nível que você prefere.";
 "language_label" = "Idioma";
 "level_label" = "Nível";
-"language_spanish" = "Espanhol";
-"language_english" = "Inglês";
-"language_french" = "Francês";
-"language_hindi" = "Hindi";
-"language_nepali" = "Nepalês";
-"language_portuguese" = "Português";
-"language_arabic" = "Árabe";
-"language_somali" = "Somali";
-"level_beginner" = "Iniciante";
-"level_intermediate" = "Intermediário";
-"level_advanced" = "Avançado";
-"level_expert" = "Especialista";
 "select_option" = "Selecionar";
 "register_license_prompt" = "Aceite a licença";
 "register_license_helper" = "Revise os termos antes de criar sua conta.";
