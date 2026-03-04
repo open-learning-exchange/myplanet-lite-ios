@@ -22,8 +22,6 @@
 "no_account" = "क्या आपका खाता नहीं है?";
 "register" = "रजिस्टर करें";
 "privacy_notice" = "हमारी गोपनीयता नीति पढ़ें";
-"dashboard_tab_voices" = "आवाज़ें";
-"dashboard_tab_teams" = "मेरी टीमें";
 "logout" = "लॉग आउट";
 "menu_profile" = "प्रोफ़ाइल";
 "menu_teams" = "टीम";
@@ -88,18 +86,6 @@
 "register_language_level_helper" = "अपनी पसंद की भाषा और स्तर चुनें।";
 "language_label" = "भाषा";
 "level_label" = "स्तर";
-"language_spanish" = "स्पेनिश";
-"language_english" = "अंग्रेज़ी";
-"language_french" = "फ़्रेंच";
-"language_hindi" = "हिंदी";
-"language_nepali" = "नेपाली";
-"language_portuguese" = "पुर्तगाली";
-"language_arabic" = "अरबी";
-"language_somali" = "सोमाली";
-"level_beginner" = "शुरुआती";
-"level_intermediate" = "मध्यम";
-"level_advanced" = "उन्नत";
-"level_expert" = "विशेषज्ञ";
 "select_option" = "चुनें";
 "register_license_prompt" = "लाइसेंस स्वीकार करें";
 "register_license_helper" = "अपना खाता बनाने से पहले शर्तें देखें।";

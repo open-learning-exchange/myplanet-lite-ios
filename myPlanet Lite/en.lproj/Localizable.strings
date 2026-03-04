@@ -22,8 +22,6 @@
 "no_account" = "Don’t have an account?";
 "register" = "Register";
 "privacy_notice" = "Read our privacy policy";
-"dashboard_tab_voices" = "Voices";
-"dashboard_tab_teams" = "My Teams";
 "logout" = "Log out";
 "menu_profile" = "Profile";
 "menu_teams" = "Teams";
@@ -88,18 +86,6 @@
 "register_language_level_helper" = "Select the language and level you prefer.";
 "language_label" = "Language";
 "level_label" = "Level";
-"language_spanish" = "Spanish";
-"language_english" = "English";
-"language_french" = "French";
-"language_hindi" = "Hindi";
-"language_nepali" = "Nepali";
-"language_portuguese" = "Portuguese";
-"language_arabic" = "Arabic";
-"language_somali" = "Somali";
-"level_beginner" = "Beginner";
-"level_intermediate" = "Intermediate";
-"level_advanced" = "Advanced";
-"level_expert" = "Expert";
 "select_option" = "Select";
 "register_license_prompt" = "Accept the license";
 "register_license_helper" = "Review the terms before creating your account.";
