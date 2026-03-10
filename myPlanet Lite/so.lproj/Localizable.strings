@@ -22,8 +22,6 @@
 "no_account" = "Ma lihid akoon?";
 "register" = "Isdiiwaangeli";
 "privacy_notice" = "Akhri siyaasaddayada asturnaanta";
-"dashboard_tab_voices" = "Codadka";
-"dashboard_tab_teams" = "Kooxahayga";
 "logout" = "Ka bax";
 "menu_profile" = "Astaanta";
 "menu_teams" = "Kooxo";
@@ -88,18 +86,6 @@
 "register_language_level_helper" = "Dooro luqadda iyo heerka aad doorbideyso.";
 "language_label" = "Luqad";
 "level_label" = "Heer";
-"language_spanish" = "Isbaanish";
-"language_english" = "Ingiriisi";
-"language_french" = "Faransiis";
-"language_hindi" = "Hindi";
-"language_nepali" = "Nepali";
-"language_portuguese" = "Boortaqiis";
-"language_arabic" = "Carabi";
-"language_somali" = "Soomaali";
-"level_beginner" = "Bilow";
-"level_intermediate" = "Dhexe";
-"level_advanced" = "Sare";
-"level_expert" = "Khabiir";
 "select_option" = "Dooro";
 "register_license_prompt" = "Oggolow shatiga";
 "register_license_helper" = "Dib u eeg shuruudaha ka hor inta aanad abuurin koontadaada.";

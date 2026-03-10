@@ -22,8 +22,6 @@
 "no_account" = "ليس لديك حساب؟";
 "register" = "سجّل";
 "privacy_notice" = "اقرأ سياسة الخصوصية الخاصة بنا";
-"dashboard_tab_voices" = "أصوات";
-"dashboard_tab_teams" = "فِرَقي";
 "logout" = "تسجيل الخروج";
 "menu_profile" = "الملف الشخصي";
 "menu_teams" = "الفرق";
@@ -88,18 +86,6 @@
 "register_language_level_helper" = "اختر اللغة والمستوى الذي تفضّله.";
 "language_label" = "اللغة";
 "level_label" = "المستوى";
-"language_spanish" = "الإسبانية";
-"language_english" = "الإنجليزية";
-"language_french" = "الفرنسية";
-"language_hindi" = "الهندية";
-"language_nepali" = "النيبالية";
-"language_portuguese" = "البرتغالية";
-"language_arabic" = "العربية";
-"language_somali" = "الصومالية";
-"level_beginner" = "مبتدئ";
-"level_intermediate" = "متوسط";
-"level_advanced" = "متقدم";
-"level_expert" = "خبير";
 "select_option" = "اختر";
 "register_license_prompt" = "اقبل الترخيص";
 "register_license_helper" = "راجع الشروط قبل إنشاء حسابك.";
