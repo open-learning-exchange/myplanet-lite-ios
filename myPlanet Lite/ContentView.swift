@@ -421,6 +421,7 @@ struct ContentView: View {
             if let loginResponse = try? JSONDecoder().decode(LoginResponse.self, from: data),
                loginResponse.ok {
                 storeAuthCookie(from: httpResponse, url: url)
+                await sendLoginActivity(host: host, username: username)
                 await validateFavoriteTeamMembership(host: host, username: username, password: password)
                 return true
             }
@@ -500,6 +501,42 @@ struct ContentView: View {
             authSessionCookie = authCookie.value
         }
     }
+
+    private func sendLoginActivity(host: String, username: String) async {
+        let baseHost = host.hasSuffix("/") ? host : "\(host)/"
+        guard let url = URL(string: "\(baseHost)db/login_activities") else { return }
+
+        let now = Int64(Date().timeIntervalSince1970 * 1000)
+        let oneHourLater = now + (60 * 60 * 1000)
+        let deviceId = UIDevice.current.identifierForVendor?.uuidString ?? UUID().uuidString
+
+        let payload = LoginActivityPayload(
+            user: username,
+            type: "login",
+            loginTime: now,
+            logoutTime: oneHourLater,
+            createdOn: planetCode,
+            parentCode: planetParentCode,
+            androidId: deviceId,
+            deviceName: UIDevice.current.model,
+            customDeviceName: UIDevice.current.name
+        )
+
+        guard let body = try? JSONEncoder().encode(payload) else { return }
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        if !authSessionCookie.isEmpty {
+            request.setValue("AuthSession=\(authSessionCookie)", forHTTPHeaderField: "Cookie")
+        }
+        request.httpBody = body
+
+        do {
+            _ = try await URLSession.shared.data(for: request)
+        } catch {
+        }
+    }
 }
 
 struct LoginRequest: Encodable {
@@ -511,6 +548,18 @@ struct LoginResponse: Decodable {
     let ok: Bool
     let name: String?
     let roles: [String]?
+}
+
+struct LoginActivityPayload: Encodable {
+    let user: String
+    let type: String
+    let loginTime: Int64
+    let logoutTime: Int64
+    let createdOn: String
+    let parentCode: String
+    let androidId: String
+    let deviceName: String
+    let customDeviceName: String
 }
 
 struct ServerConfigurationResponse: Decodable {
