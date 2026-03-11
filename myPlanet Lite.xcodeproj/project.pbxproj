@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6003C9CD2F61CDC600E026E2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6003C9CB2F61CDBA00E026E2 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		6003C9CB2F61CDBA00E026E2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		60E590392EF3346100A9288B /* myPlanet Lite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "myPlanet Lite.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -34,6 +39,7 @@
 			children = (
 				60E5903B2EF3346100A9288B /* myPlanet Lite */,
 				60E5903A2EF3346100A9288B /* Products */,
+				6003C9CB2F61CDBA00E026E2 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +122,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6003C9CD2F61CDC600E026E2 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
