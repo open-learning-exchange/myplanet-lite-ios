@@ -1541,13 +1541,15 @@ struct PrivacyPolicyView: View {
                         .fontWeight(.bold)
 
                     policySection(title: "privacy_intro_title", body: "privacy_intro_body")
+                    policySection(title: "privacy_definitions_title", body: "privacy_definitions_body")
                     policySection(title: "privacy_collect_title", body: "privacy_collect_body")
                     policySection(title: "privacy_use_title", body: "privacy_use_body")
-                    policySection(title: "privacy_storage_title", body: "privacy_storage_body")
-                    policySection(title: "privacy_share_title", body: "privacy_share_body")
-                    policySection(title: "privacy_rights_title", body: "privacy_rights_body")
+                    policySection(title: "privacy_retention_title", body: "privacy_retention_body")
+                    policySection(title: "privacy_transfer_title", body: "privacy_transfer_body")
+                    policySection(title: "privacy_disclosure_title", body: "privacy_disclosure_body")
                     policySection(title: "privacy_security_title", body: "privacy_security_body")
                     policySection(title: "privacy_children_title", body: "privacy_children_body")
+                    policySection(title: "privacy_links_title", body: "privacy_links_body")
                     policySection(title: "privacy_updates_title", body: "privacy_updates_body")
                     policySection(title: "privacy_contact_title", body: "privacy_contact_body")
                 }
